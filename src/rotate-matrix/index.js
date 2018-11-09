@@ -1,4 +1,7 @@
 export const rotateMatrix = arr => {
-  // logic...
-};
+  const indexes = [...arr.keys()];
 
+  return indexes.map(index => {
+    return arr.map(row => row[index]);
+  });
+};
